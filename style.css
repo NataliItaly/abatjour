@@ -443,6 +443,10 @@ body {
   margin-bottom: 5px;
 }
 
+.proud {
+  padding-bottom: 120px;
+}
+
 .proud__title {
   margin-bottom: 40px;
 }
@@ -569,4 +573,81 @@ body {
 
 .slider__link:hover::before {
   width: 100%;
+}
+
+.mission {
+  color: var(--font-color-secondary);
+  background: var(--main-color);
+  padding-top: 120px;
+  padding-bottom: 0;
+  position: relative;
+}
+
+.mission::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 320px;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  background: url(./images/images/mission/mission-bg.png) no-repeat center /
+    cover;
+}
+
+.mission__grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, auto) 200px;
+  gap: 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.mission__title {
+  grid-column: 8 / -1;
+  grid-row: 1;
+}
+
+.mission__text {
+  grid-column: 8 / -1;
+}
+
+.mission__text:first-of-type {
+  grid-row: 2;
+}
+
+.mission__text:last-of-type {
+  grid-row: 3;
+}
+
+.mission__video {
+  grid-column: 1 / span 6;
+  grid-row: 1 / span 4;
+}
+
+.mission__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mission__img:first-of-type {
+  grid-column: 4 / span 3;
+  grid-row: -2;
+}
+
+.mission__img_sm {
+  grid-column: 4 / span 3;
+  grid-row: -2;
+}
+
+.mission__img:last-of-type {
+  grid-column: 7 / span 6;
+  grid-row: 4 / span 2;
+}
+
+.mission__img_md {
+  grid-column: 7 / span 6;
+  grid-row: 4 / span 2;
 }
