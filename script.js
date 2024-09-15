@@ -35,7 +35,7 @@ function setBestCards(arr) {
                   </svg>
                 </button>
                 <img
-                  src="./images/images/best/${i + 1}.jpg"
+                  src="./assets/images/best/${i + 1}.jpg"
                   alt=""
                   class="card__img"
                 />

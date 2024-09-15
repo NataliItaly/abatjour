@@ -3,25 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Old+Standard+TT&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="description" content="Abatjour company landing page" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
     <title>Abatjour</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="container header__grid">
         <div class="header__logo logo">
           <img
-            src="./images/icons/logo.svg"
+            src="./assets/icons/logo.svg"
             alt="Abatjour logo"
             class="logo__img"
           />
           <p class="logo__text">Design textile studio in Florence</p>
         </div>
-        <a href="tel:+3938933555" class="header__info header__info_tel">
+        <div class="header__info header__info_tel">
           <div class="header__details">
-            <p>+39 389 33 555</p>
-            <button class="header__call-btn">Order a call</button>
+            <a href="tel:+3938933555" class="header__tel-call"
+              >+39 389 33 555</a
+            >
+            <a href="#contacts" class="header__order-call">Order a call</a>
           </div>
           <p class="header__icon">
             <svg
@@ -42,7 +49,7 @@
               />
             </svg>
           </p>
-        </a>
+        </div>
         <a
           href="https://maps.app.goo.gl/vgLNPaHuG5NmYjnt6"
           class="header__info header__info_location"
@@ -76,7 +83,7 @@
           </p>
         </a>
         <div class="header__nav">
-          <button class="header__nav-btn">
+          <button class="header__nav-btn" name="Toggle navigation">
             <span class="header__nav-span"></span>
             <span class="header__nav-span"></span>
             <span class="header__nav-span"></span>
@@ -86,7 +93,7 @@
     </header>
 
     <main class="main">
-      <section class="section section_dark hero">
+      <section class="section section_dark-bg hero" id="hero">
         <div class="container hero__container">
           <h2 class="section__title hero__title">
             Let's create <br />
@@ -98,13 +105,13 @@
           </p>
           <a href="#" class="btn btn__primary">GET A CONSULTATION</a>
           <img
-            src="./images/images/hero-img.jpg"
+            src="./assets/images/hero-img.jpg"
             alt="interior design items"
             class="hero__img"
           />
         </div>
       </section>
-      <section class="section about">
+      <section class="section about" id="about">
         <div class="container about__grid">
           <h2 class="section__title about__title">About the Company</h2>
           <div class="about__text">
@@ -124,7 +131,7 @@
           </div>
           <figure class="about__figure">
             <img
-              src="./images/images/about/1.jpg"
+              src="./assets/images/about/1.jpg"
               alt="desin pillows"
               class="about__img"
             />
@@ -149,7 +156,7 @@
           </div>
           <figure class="about__figure">
             <img
-              src="./images/images/about/2.jpg"
+              src="./assets/images/about/2.jpg"
               alt="desin pillows"
               class="about__img"
             />
@@ -166,23 +173,23 @@
           </div>
         </div>
       </section>
-      <section class="section best">
+      <section class="section best" id="best">
         <div class="container best__grid">
           <h2 class="section__title best__title">The best for you</h2>
           <ul class="best__list"></ul>
         </div>
       </section>
-      <section class="section proud">
-        <div class="container proud__grid">
-          <h2 class="section__title proud__title">
-            WE HAVE SOMETHING <br />
-            TO BE PROUD OF!
+      <section class="section projects" id="projects">
+        <div class="container projects__grid">
+          <h2 class="section__title projects__title">
+            Projects <br />
+            To Be Proud Of!
           </h2>
-          <div class="proud__slider slider">
+          <div class="projects__slider slider">
             <ul class="slider__list">
               <li class="slider__item">
                 <img
-                  src="./images/images/proud/1.jpg"
+                  src="./assets/images/projects/1.jpg"
                   alt=""
                   class="slider__img"
                 />
@@ -207,13 +214,13 @@
               </li>
             </ul>
             <div class="slider__control">
-              <button class="slider__btn">&#8592;</button>
-              <button class="slider__btn">&#8594;</button>
+              <button class="slider__btn" name="Back">&#8592;</button>
+              <button class="slider__btn" name="Forward">&#8594;</button>
             </div>
           </div>
         </div>
       </section>
-      <section class="section section_dark mission">
+      <section class="section section_dark mission" id="mission">
         <div class="container mission__grid">
           <h2 class="section__title mission__title">
             OUR MISSION AND THE VISION
@@ -228,23 +235,23 @@
             interior unique.
           </p>
           <img
-            src="./images/images/mission/1.jpg"
+            src="./assets/images/mission/1.jpg"
             alt="three design pillows brown color"
             class="mission__video"
           />
           <img
-            src="./images/images/mission/2.jpg"
+            src="./assets/images/mission/2.jpg"
             alt="design pillow beige"
             class="mission__img mission__img_sm"
           />
           <img
-            src="./images/images/mission/3.jpg"
+            src="./assets/images/mission/3.jpg"
             alt="a dog near design pillow"
             class="mission__img mission__img_md"
           />
         </div>
       </section>
-      <section class="section section_dark team">
+      <section class="section section_dark team" id="team">
         <div class="container team__grid">
           <h2 class="section__title team__title">OUR CREATIVE TEAM</h2>
           <p class="team__text">
@@ -263,13 +270,13 @@
             experience in all regions.
           </p>
           <img
-            src="./images/images/team/1.jpg"
+            src="./assets/images/team/1.jpg"
             alt="two women working behind a desk"
             class="team__img"
           />
         </div>
       </section>
-      <section class="section gallery">
+      <section class="section gallery" id="gallery">
         <div class="container gallery__grid">
           <h2 class="section__title gallery__title">Metamorphoses</h2>
           <div class="gallery__text">
@@ -280,42 +287,42 @@
           <ul class="gallery__list">
             <li class="gallery__item gallery__item_lg">
               <img
-                src="./images/images/gallery/1.jpg"
+                src="./assets/images/gallery/1.jpg"
                 alt="design pillows"
                 class="gallery__img"
               />
             </li>
             <li class="gallery__item">
               <img
-                src="./images/images/gallery/2.jpg"
+                src="./assets/images/gallery/2.jpg"
                 alt="design pillows"
                 class="gallery__img"
               />
             </li>
             <li class="gallery__item">
               <img
-                src="./images/images/gallery/3.jpg"
+                src="./assets/images/gallery/3.jpg"
                 alt="design pillows"
                 class="gallery__img"
               />
             </li>
             <li class="gallery__item">
               <img
-                src="./images/images/gallery/4.jpg"
+                src="./assets/images/gallery/4.jpg"
                 alt="design pillows"
                 class="gallery__img"
               />
             </li>
             <li class="gallery__item">
               <img
-                src="./images/images/gallery/5.jpg"
+                src="./assets/images/gallery/5.jpg"
                 alt="design pillows"
                 class="gallery__img"
               />
             </li>
             <li class="gallery__item gallery__item_lg">
               <img
-                src="./images/images/gallery/6.jpg"
+                src="./assets/images/gallery/6.jpg"
                 alt="design pillows"
                 class="gallery__img"
               />
@@ -323,7 +330,7 @@
           </ul>
         </div>
       </section>
-      <section class="section section_dark contacts">
+      <section class="section section_dark-bg contacts" id="contacts">
         <div class="container contacts__grid">
           <h2 class="section__title contacts__title">
             We are always happy to contact you
@@ -334,19 +341,33 @@
           </div>
           <form action="#" class="contacts__form">
             <p class="contacts__block">
-              <label for="name" class="contacts__label">Your name</label>
+              <label for="name" class="hidden">Your name</label>
               <input
                 type="text"
                 name="name"
                 id="name"
                 class="contacts__input"
+                placeholder="Your name"
               />
             </p>
             <p class="contacts__block">
-              <label for="tel" class="contacts__label">Your phone number</label>
-              <input type="tel" name="tel" id="tel" class="contacts__input" />
+              <label for="tel" class="hidden">Your phone number</label>
+              <input
+                type="tel"
+                name="tel"
+                id="tel"
+                class="contacts__input"
+                placeholder="Your phone number"
+              />
             </p>
-            <select name="select" id="select" class="contacts__select">
+            <label for="select" class="hidden"
+              >When do you want to receive our call?</label
+            >
+            <select
+              name="Select suitable time"
+              id="select"
+              class="contacts__select"
+            >
               <option value="suitable time" class="contacts__option">
                 Choose time
               </option>
@@ -364,15 +385,23 @@
                 >Consent to the processing of personal data</label
               >
             </p>
-            <button class="btn btn__primary contacts__btn">
+            <button
+              class="btn btn__primary contacts__btn"
+              name="Submit application"
+            >
               Submit application
             </button>
           </form>
           <div class="contacts__map">
             <img
-              src="./images/images/contacts/contacts-img.jpg"
+              src="./assets/images/contacts/contacts-img.jpg"
               alt="Aboutjour on city map"
               class="contacts__img"
+            />
+            <img
+              src="./assets/images/contacts/location.png"
+              alt="location on the map"
+              class="contacts__location"
             />
           </div>
         </div>
