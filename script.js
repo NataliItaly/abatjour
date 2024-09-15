@@ -1,8 +1,9 @@
 import goods from "./goods.json" with {type: "json"};
 
 const bestList = document.querySelector('.best__list');
+const contactsSelect = document.querySelector('.contacts__select');
 
-console.log(goods)
+//console.log(goods)
 
 function setBestCards(arr) {
   goods.forEach((good, i) => {
@@ -46,3 +47,22 @@ function setBestCards(arr) {
 }
 
 setBestCards(goods)
+
+
+// set options
+
+function setOption() {
+  let time = 9;
+  while (time <= 18) {
+    const option = `<option class="contacts__option">${setZero(time)}.00</option>`;
+    time++;
+    contactsSelect.insertAdjacentHTML("beforeend", option);
+  }
+}
+
+setOption()
+
+function setZero(num) {
+  return num < 10 ? `0${num}` : `${num}`;
+}
+
