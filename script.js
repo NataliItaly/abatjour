@@ -54,7 +54,7 @@ setBestCards(goods)
 function setOption() {
   let time = 9;
   while (time <= 18) {
-    const option = `<option class="contacts__option">${setZero(time)}.00</option>`;
+    const option = `<option value="${time}" class="contacts__option">${setZero(time)}.00</option>`;
     time++;
     contactsSelect.insertAdjacentHTML("beforeend", option);
   }

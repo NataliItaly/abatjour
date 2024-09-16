@@ -231,7 +231,8 @@ h3 {
 
 .section_dark-bg {
   color: var(--font-color-secondary);
-  background: url(./assets/images/dark-bg.jpg);
+  background: #343235 url(./assets/images/dark-bg2.jpg) no-repeat center / cover;
+  background-blend-mode: overlay;
 }
 
 .section__title {
@@ -1041,11 +1042,14 @@ h3 {
   grid-column: 8 / -1;
   grid-row: 1 / -1;
   width: 100%;
+  background: #343235 url(./assets/images/contacts/contacts-img.jpg) no-repeat
+    center / cover;
+  background-blend-mode: overlay;
   position: relative;
 }
 
 .contacts__map::after {
-  content: "";
+  /* content: ""; */
   position: absolute;
   top: 0;
   left: 0;
